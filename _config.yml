@@ -24,23 +24,50 @@ description: >- # this means to ignore newlines until "baseurl:"
   Gamedesign, Architecture, Interior rendering
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jellevermandere
+
 instagram_username: jellevermandere
 youtube_username: jellevermandere
+twitter_username: jellevermandere
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+-
+  games
+  visualisations
+
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-        layout: "post"
-        
+-
+  scope:
+    locale: ""
+    type: "posts"
+  values:
+      layout: "post"
+      categories: games
+      permalink: /:categories/:title
+-
+  scope:
+    locale: ""
+    type: "_games"
+  values:
+    layout: "post"
+    categories: visualisations
+    permalink: /:categories/:title
+  
+sass:
+  # loading path from site root
+  # default to _sass
+  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+
+  # style : nested (default), compact, compressed, expanded
+  #         :nested, :compact, :compressed, :expanded also works
+  # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  # on a typical twitter bootstrap stats are :
+  # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
