@@ -2,3 +2,55 @@
 ---
 
 @import 'bootstrap/bootstrap';
+
+/* body    ******************************************************** */
+
+body {
+    min-height: 100%;
+   // color: $background !important;
+    position: relative;
+    padding-bottom: 95px;
+    
+
+}
+
+/* nav    ******************************************************** */
+
+.navbar{
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: $primary !important;
+    background-color : $background !important;
+  
+    .nav-item{
+      margin-left: 20px;
+      border-color: $primary !important;
+      
+    }
+  }
+  
+  .nav-link {
+    color: $info !important;
+  
+    &:hover {
+      color: $primary !important;
+    }
+  }
+/* footer    ******************************************************** */
+
+.footer{
+    color : $background !important;
+}
+
+.social-links {
+a {
+    text-decoration: none;
+    padding-right: 10px;
+
+    &:hover {
+    color: $background;
+    cursor: pointer;
+    }
+}
+}
+

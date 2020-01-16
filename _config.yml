@@ -1,11 +1,43 @@
 # Site settings
-title:
-email:
-author:
+title: Jellever
+email: jelle@jellever.be
+author: Jelle Vermandere
 description:
 url:
+# Social icons
+show_social_icons: true
+username: jellevermandere
+
 
 # Build settings
+
+collections:
+  games:
+    output: true
+
+  visualisations:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: "games"
+    values:
+      layout: "game"
+      permalink: "/games/:title"
+      main_image: "/img/main/:title"
+      character_image: "img/character/:title"
+  -
+    scope:
+      type: "visualisations"
+    values:
+      layout: "visualisation"
+      permalink: "/visualisations/:title"
+
+
 permalink: :title/
+
+# sass
+
 sass:
   sass_dir: css

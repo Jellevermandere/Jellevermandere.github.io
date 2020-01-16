@@ -1,0 +1,35 @@
+---
+layout: default
+title: games
+permalink: /games
+---
+
+
+
+<section id="games" class="py-5">
+    <div class="container">
+        <h1>games</h1>
+      <div class="row">
+        
+          {% for games in site.games %}
+          <div class="col-md-6 col-lg-4">
+            <div>
+              <h2><a href="{{ game.permalink | prepend: site.baseurl }}">{{ games.title }}</a></h2>
+              <p class="text-info lead">
+                {{ games.date | date: "%b %-d, %Y" }}
+              </p>
+  
+              <p>
+                {% if games.summary %}
+                  {{ games.summary }}
+                {% else %}
+                  {{ games.excerpt }}
+                {% endif %}
+              </p>
+            </div>
+        </div>
+          {% endfor %}
+        
+      </div>
+    </div>
+  </section>
