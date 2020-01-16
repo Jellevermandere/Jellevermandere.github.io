@@ -1,1 +1,0 @@
-the giraffe is lost

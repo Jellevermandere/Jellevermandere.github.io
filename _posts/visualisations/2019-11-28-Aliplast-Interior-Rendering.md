@@ -1,5 +1,0 @@
----
-categories: visualisations
----
-
-interior rendering
