@@ -6,31 +6,63 @@ published: true
 ---
 
 
+      
+{% for games in site.games reversed %}
+{% assign value = forloop.index | modulo:2 %}
+{% if value == 0 %}
+<a class="row game-row justify-content-center" style="background-color:{{games.main_color}}; color: {{games.second_color}}" href="{{ games.permalink }}">
 
-<section id="games" class="py-5">
-    <div class="container">
-        <h1>games</h1>
-      <div class="row">
-        
-          {% for games in site.games %}
-          <div class="col-md-6 col-lg-4">
-            <div>
-              <h2><a href="{{ game.permalink | prepend: site.baseurl }}">{{ games.title }}</a></h2>
-              <p class="text-info lead">
-                {{ games.date | date: "%b %-d, %Y" }}
-              </p>
-  
-              <p>
-                {% if games.summary %}
-                  {{ games.summary }}
-                {% else %}
-                  {{ games.excerpt }}
-                {% endif %}
-              </p>
-            </div>
-        </div>
-          {% endfor %}
-        
-      </div>
+    <div class="col-md-5 col-xl-4">
+
+      <img class="img-fluid rounded game-image" src="/img/games/main/{{games.main_image}}" alt="{{games.title}}">
+
     </div>
-  </section>
+
+    <div class="col-md-7 col-xl-6">
+
+      <h2 style="text-align: left;" style="color: {{games.second_color}};">{{ games.title }}</h2>
+      
+      <p class="text-info lead">
+        {{ games.date | date: "%b %-d, %Y" }}
+      </p>
+      
+      <p style="color: {{games.second_color}};">
+        {{ games.subtitle }}
+      </p>
+
+    </div> 
+
+  </a>
+  
+{% else %}
+  <a class="row game-row justify-content-center" style="background-color:{{games.main_color}}; color: {{games.second_color}}" href="{{ games.permalink }}">
+
+    <div class="col-md-7 col-xl-6" >
+
+      <h2 style="text-align: right;" style="color: {{games.second_color}};">{{ games.title }}</h2>
+      
+      <p class="text-info lead" style="text-align: right; color: {{games.second_color}};">
+        {{ games.date | date: "%b %-d, %Y" }}
+      </p>
+      
+      <p style="color: {{games.second_color}}; text-align: right;">
+        {{ games.subtitle }}
+      </p>
+
+    </div> 
+
+    <div class="col-md-5 col-xl-4">
+
+      <img class="img-fluid rounded game-image" src="/img/games/main/{{games.main_image}}" alt="{{games.title}}">
+
+    </div>
+
+
+
+  </a>
+{% endif %}
+
+
+  {% endfor %}
+
+

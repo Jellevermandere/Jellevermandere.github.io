@@ -24,15 +24,13 @@ defaults:
       type: "games"
     values:
       layout: "game"
-      permalink: "/games/:title"
-      main_image: "/img/main/:title"
-      character_image: "img/character/:title"
+      
   -
     scope:
       type: "visualisations"
     values:
       layout: "visualisation"
-      permalink: "/visualisations/:title"
+      permalink: /visualisations/:title
 
 
 

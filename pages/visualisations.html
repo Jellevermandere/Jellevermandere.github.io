@@ -5,4 +5,30 @@ permalink: /visualisations/
 published: true
 ---
 
-visualisations
+<section id="games" class="py-5">
+    <div class="container">
+        <h1>Visualisations</h1>
+      <div class="row">
+        
+          {% for visualisations in site.visualisations %}
+          <div class="col-md-6 col-lg-4">
+            <div>
+              <h2><a href="{{ site.baseurl }}/visualisations/{{visualisations.title}}/">{{ visualisations.title }}</a></h2>
+              <p class="text-info lead">
+                {{ games.date | date: "%b %-d, %Y" }}
+              </p>
+  
+              <p>
+                {% if games.subtitle %}
+                  {{ games.subtitle }}
+                {% else %}
+                  {{ games.excerpt }}
+                {% endif %}
+              </p>
+            </div>
+        </div>
+          {% endfor %}
+        
+      </div>
+    </div>
+  </section>

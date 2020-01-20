@@ -3,16 +3,39 @@
 
 @import 'bootstrap/bootstrap';
 
+@font-face {
+  font-family: Futura;  
+  src: url(img/site/futura.ttc);  
+  font-weight: normal;  
+}
+
 /* body    ******************************************************** */
 
 body {
+  
+  font-family: Futura, sans-serif;
     min-height: 100%;
    // color: $background !important;
     position: relative;
     padding-bottom: 95px;
-    
 
 }
+h1{
+  font-family: Futura, sans-serif;
+}
+h2{
+  font-family: Futura, sans-serif;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  opacity: 0.95 !important;
+}
+
 
 /* nav    ******************************************************** */
 
@@ -33,9 +56,35 @@ body {
     color: $info !important;
   
     &:hover {
+      opacity: 1 !important;
       color: $primary !important;
     }
   }
+
+/* games    ******************************************************** */
+
+.game-row{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+ 
+  
+}
+.rounded {
+  border-radius: 10px !important; //for example
+}
+
+/* 404    ******************************************************** */
+
+.page-404{
+  background-image: url('../img/site/bannerNoName.png');
+  background-size: cover;
+}
+
+
+
+
 /* footer    ******************************************************** */
 
 .footer{
