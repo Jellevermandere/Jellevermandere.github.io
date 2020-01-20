@@ -5,30 +5,60 @@ permalink: /visualisations/
 published: true
 ---
 
-<section id="games" class="py-5">
-    <div class="container">
-        <h1>Visualisations</h1>
-      <div class="row">
-        
-          {% for visualisations in site.visualisations %}
-          <div class="col-md-6 col-lg-4">
-            <div>
-              <h2><a href="{{ site.baseurl }}/visualisations/{{visualisations.title}}/">{{ visualisations.title }}</a></h2>
-              <p class="text-info lead">
-                {{ games.date | date: "%b %-d, %Y" }}
-              </p>
-  
-              <p>
-                {% if games.subtitle %}
-                  {{ games.subtitle }}
-                {% else %}
-                  {{ games.excerpt }}
-                {% endif %}
-              </p>
-            </div>
-        </div>
-          {% endfor %}
-        
-      </div>
+{% for visualisations in site.visualisations reversed %}
+{% assign value = forloop.index | modulo:2 %}
+{% if value == 0 %}
+<a class="row game-row justify-content-center" style="background-color:{{visualisations.main_color}}; color: {{visualisations.second_color}}" href="{{ visualisations.permalink }}">
+
+    <div class="col-sm-6 game-img-col">
+
+      <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.main_image}}" alt="{{visualisations.title}}">
+
     </div>
-  </section>
+
+    <div class="col-sm-6 game-text-col">
+
+      <h2 style="text-align: left;" style="color: {{visualisations.second_color}};">{{ visualisations.title }}</h2>
+      
+      <p class="text-info lead">
+        {{ visualisations.date | date: "%b %-d, %Y" }}
+      </p>
+      
+      <p style="color: {{visualisations.second_color}}; text-align: justify;">
+        {{ visualisations.subtitle }}
+      </p>
+
+    </div> 
+
+  </a>
+  
+{% else %}
+  <a class="row game-row justify-content-center" style="background-color:{{visualisations.main_color}}; color: {{visualisations.second_color}}" href="{{ visualisations.permalink }}">
+
+    <div class="col-sm-6 game-text-col order-2 order-sm-1" >
+
+      <h2 style="text-align: right;" style="color: {{visualisations.second_color}};">{{ visualisations.title }}</h2>
+      
+      <p class="text-info lead" style="text-align: right; color: {{visualisations.second_color}};">
+        {{ visualisations.date | date: "%b %-d, %Y" }}
+      </p>
+      
+      <p style="color: {{visualisations.second_color}}; text-align: justify;">
+        {{ visualisations.subtitle }}
+      </p>
+
+    </div> 
+
+    <div class="col-sm-6 game-img-col order-1 order-sm-1">
+
+      <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.main_image}}" alt="{{visualisations.title}}">
+
+    </div>
+
+
+
+  </a>
+{% endif %}
+
+
+  {% endfor %}

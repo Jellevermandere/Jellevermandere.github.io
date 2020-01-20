@@ -1,3 +1,21 @@
 ---
 layout: default
 ---
+<div class="container">
+    
+    <div class="row vis-img-col">
+        <img class="img-fluid" src="../img/visualisations/main/{{page.main_image}}" alt="{{page.title}}">
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 vis-text-col">
+            <div class="row">
+                <h1>{{ page.title }}</h1>
+            </div>
+            
+            <div class="row">
+                {{content}}
+            </div>
+        </div>
+    </div>   
+</div>

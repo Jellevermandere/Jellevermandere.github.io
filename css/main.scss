@@ -14,10 +14,7 @@
 body {
   
   font-family: Futura, sans-serif;
-    min-height: 100%;
-   // color: $background !important;
-    position: relative;
-    padding-bottom: 95px;
+   
 
 }
 h1{
@@ -29,12 +26,16 @@ h2{
 }
 p{
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 a{
   text-decoration: none !important;
 }
 a:hover{
   opacity: 0.95 !important;
+}
+.lead{
+  font-size: 14px;
 }
 
 
@@ -81,6 +82,25 @@ a:hover{
 .rounded {
   border-radius: 10px !important; //for example
 }
+
+/* visualisations *********************************************** */
+
+
+.vis-img-col{
+  
+  padding-left: 15px;
+  padding-right: 15px;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+ 
+  
+}
+.vis-text-col{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 
 /* 404    ******************************************************** */
 
