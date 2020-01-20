@@ -25,6 +25,7 @@ h1{
 }
 h2{
   font-family: Futura, sans-serif;
+  font-size: 36px;
 }
 p{
   font-family: 'Roboto', sans-serif;
@@ -67,9 +68,15 @@ a:hover{
   margin: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-
- 
   
+
+}
+
+.game-img-col{
+  max-width: 600px !important;
+}
+.game-text-col{
+  max-width: 600px !important;
 }
 .rounded {
   border-radius: 10px !important; //for example
@@ -102,4 +109,31 @@ a {
     }
 }
 }
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  h2{
+    font-size: 24px;
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  h2{
+    font-size: 36px;
+  }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+ }
 

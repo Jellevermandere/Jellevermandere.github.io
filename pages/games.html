@@ -12,13 +12,13 @@ published: true
 {% if value == 0 %}
 <a class="row game-row justify-content-center" style="background-color:{{games.main_color}}; color: {{games.second_color}}" href="{{ games.permalink }}">
 
-    <div class="col-md-5 col-xl-4">
+    <div class="col-sm-6 game-img-col">
 
       <img class="img-fluid rounded game-image" src="../img/games/main/{{games.main_image}}" alt="{{games.title}}">
 
     </div>
 
-    <div class="col-md-7 col-xl-6">
+    <div class="col-sm-6 game-text-col">
 
       <h2 style="text-align: left;" style="color: {{games.second_color}};">{{ games.title }}</h2>
       
@@ -37,7 +37,7 @@ published: true
 {% else %}
   <a class="row game-row justify-content-center" style="background-color:{{games.main_color}}; color: {{games.second_color}}" href="{{ games.permalink }}">
 
-    <div class="col-md-7 col-xl-6" >
+    <div class="col-sm-6 game-text-col" >
 
       <h2 style="text-align: right;" style="color: {{games.second_color}};">{{ games.title }}</h2>
       
@@ -51,7 +51,7 @@ published: true
 
     </div> 
 
-    <div class="col-md-5 col-xl-4">
+    <div class="col-sm-6 game-img-col">
 
       <img class="img-fluid rounded game-image" src="../img/games/main/{{games.main_image}}" alt="{{games.title}}">
 
