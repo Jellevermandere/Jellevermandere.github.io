@@ -45,7 +45,7 @@ a{
   text-decoration: none !important;
 }
 a:hover{
-  opacity: 0.95 !important;
+  opacity: 0.9 !important;
 }
 .lead{
   font-size: 14px;
@@ -91,8 +91,6 @@ a:hover{
   margin: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  
-
 }
 
 .game-img-col{
@@ -107,6 +105,22 @@ a:hover{
 }
 
 /* visualisations *********************************************** */
+.vis-row-a{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $rowbga !important; 
+  color: $rowtexta !important;
+}
+
+.vis-row-b{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $rowbgb !important; 
+  color: $rowtextb !important;
+}
+
 .vis-col{
   padding-left: 0px;
   padding-right: 0px;

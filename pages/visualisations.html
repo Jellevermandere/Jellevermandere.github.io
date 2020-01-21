@@ -8,7 +8,7 @@ published: true
 {% for visualisations in site.visualisations reversed %}
 {% assign value = forloop.index | modulo:2 %}
 {% if value == 0 %}
-<a class="row game-row justify-content-center" style="background-color:{{visualisations.main_color}}; color: {{visualisations.second_color}}" href="{{ visualisations.permalink }}">
+  <a class="row vis-row-a justify-content-center" href="{{ visualisations.permalink }}">
 
     <div class="col-sm-6 game-img-col">
 
@@ -18,13 +18,13 @@ published: true
 
     <div class="col-sm-6 game-text-col">
 
-      <h2 style="text-align: left;" style="color: {{visualisations.second_color}};">{{ visualisations.title }}</h2>
+      <h2 style="text-align: left;" style="color: $rowtexta;">{{ visualisations.title }}</h2>
       
       <p class="text-muted lead">
         {{ visualisations.date | date: "%b %-d, %Y" }}
       </p>
       
-      <p style="color: {{visualisations.second_color}}; text-align: justify;">
+      <p style="color: $rowtexta; text-align: justify;">
         {{ visualisations.subtitle }}
       </p>
 
@@ -33,17 +33,17 @@ published: true
   </a>
   
 {% else %}
-  <a class="row game-row justify-content-center" style="background-color:{{visualisations.main_color}}; color: {{visualisations.second_color}}" href="{{ visualisations.permalink }}">
+  <a class="row vis-row-b justify-content-center" href="{{ visualisations.permalink }}">
 
     <div class="col-sm-6 game-text-col order-2 order-sm-1" >
 
-      <h2 style="text-align: right;" style="color: {{visualisations.second_color}};">{{ visualisations.title }}</h2>
+      <h2 style="text-align: right;" style="color: $rowtextb;">{{ visualisations.title }}</h2>
       
-      <p class="text-muted lead" style="text-align: right; color: {{visualisations.second_color}};">
+      <p class="text-muted lead" style="text-align: right;">
         {{ visualisations.date | date: "%b %-d, %Y" }}
       </p>
       
-      <p style="color: {{visualisations.second_color}}; text-align: justify;">
+      <p style="color: $rowtextb; text-align: justify;">
         {{ visualisations.subtitle }}
       </p>
 
@@ -55,10 +55,8 @@ published: true
 
     </div>
 
-
-
   </a>
+
 {% endif %}
 
-
-  {% endfor %}
+{% endfor %}

@@ -1,7 +1,5 @@
 ---
 
-main_color: "#eee"
-second_color: "#333"
 permalink: /games/villalampens
 main_image: "LampensInt.jpg"
 wip_image: AliplastWip.jpg

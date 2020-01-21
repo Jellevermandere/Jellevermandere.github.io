@@ -1,7 +1,5 @@
 ---
 
-main_color: "#fff"
-second_color: "#111"
 permalink: /games/rectoraatsnede
 main_image: "RectoraatSnede.jpg"
 wip_image: AliplastWip.jpg
