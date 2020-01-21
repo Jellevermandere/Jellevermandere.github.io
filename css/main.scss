@@ -84,17 +84,18 @@ a:hover{
 }
 
 /* visualisations *********************************************** */
+.vis-img{
+  max-height: 75vh;
+  margin: auto;    
+    display: block;
+}
 
-
-.vis-img-col{
+.vis-img-row{
   
-  padding-left: 15px;
-  padding-right: 15px;
-  max-height: 600px;
-  overflow: hidden;
-  
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
  
-  
 }
 .vis-text-col{
   padding-right: 30px;

@@ -7,7 +7,7 @@ permalink: /games/thelostgiraffe
 main_image: "TheLostGiraffe.png"
 character_image: Toy-hunter-character.png
 
-subtitle: This little giraffe has lost it's classmates. Find your way through the treacherous jungle by swinging with your long neck. Help your classmates along the way and before you know it, you'll be back on the buss.
+subtitle: This little giraffe has lost it's classmates. Find your way through the treacherous jungle by swinging with your long neck. Help your classmates along the way and before you know it, you'll be back on the bus.
 
 
 ---
