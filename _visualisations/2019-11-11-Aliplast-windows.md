@@ -1,8 +1,7 @@
 ---
-itch: 378486
 
 main_color: "#eee"
-second_color: "#111"
+second_color: "#333"
 permalink: /games/aliplastwindow
 main_image: "AliplastRaam.jpg"
 wip_image: AliplastWip.jpg
