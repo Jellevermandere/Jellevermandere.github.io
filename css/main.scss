@@ -41,16 +41,53 @@ p{
   padding-left: 15px;
   padding-right: 15px;
 }
+.lead{
+  font-size: 14px;
+}
+
 a{
   text-decoration: none !important;
 }
 a:hover{
   opacity: 0.9 !important;
 }
-.lead{
-  font-size: 14px;
+
+
+.row-a{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $rowbga !important; 
+  color: $rowtexta !important;
+  justify-content: center;
 }
 
+.row-b{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $rowbgb !important; 
+  color: $rowtextb !important;
+  justify-content: center;
+  text-align: right;
+}
+.col-a{
+  max-width: 600px !important;
+  
+}
+
+.col-b{
+  max-width: 600px !important;
+  
+}
+.example-col{
+  max-width: 400px !important;
+  padding: 15px;
+}
+.example-text-col{
+  max-width: 1200px;
+  
+}
 
 /* nav    ******************************************************** */
 
@@ -83,6 +120,10 @@ a:hover{
   
 }
 
+.about-title{
+text-align: left;
+}
+
 
 
 /* games    ******************************************************** */
@@ -105,21 +146,7 @@ a:hover{
 }
 
 /* visualisations *********************************************** */
-.vis-row-a{
-  margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: $rowbga !important; 
-  color: $rowtexta !important;
-}
 
-.vis-row-b{
-  margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: $rowbgb !important; 
-  color: $rowtextb !important;
-}
 
 .vis-col{
   padding-left: 0px;
@@ -190,6 +217,9 @@ a {
   .lead{
     font-size: 11px;
   }
+  .about-title{
+    text-align: right;
+    }
  }
 
 // Medium devices (tablets, 768px and up)

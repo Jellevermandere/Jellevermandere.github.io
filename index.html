@@ -3,9 +3,8 @@ layout: default
 title: home
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col">
+  <div class="row row-a">
+    <div class="col example-text-col">
       <h1 class="text-primary">I am Jelle Vermandere</h1>
       <p>
         I am a 3D generalist who enjoys making digital things. 
@@ -13,20 +12,36 @@ title: home
     </div>
   </div>
 
-  <div class="row">
-    <div class="col">
-      <h1 class="text-primary">I can make visualisations for you</h1>
-      <p>
-        Do you need an image of something that does not exist yet? Contact me and let's work together!
-      </p>
-      <p>
-        Have a look of some previous projects I worked on:
-      </p>
+    <div class="row row-b">
+      <div class="col example-text-col">
+        <h1 class="text-primary">I can make visualisations for you</h1>
+        <p>
+          Do you need an image of something that does not exist yet? Contact me and let's work together!
+        </p>
+        <p>
+          Have a look of some previous projects I worked on:
+        </p>
+      </div>
     </div>
-  </div>
+    
+    <div class="row row-b ">
+      {% for visualisations in site.visualisations reversed limit: 3%}
+        <div class="col-sm example-col">
 
-  <div class="row">
-    <div class="col">
+          <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.main_image}}" alt="{{visualisations.title}}">
+          
+        </div>
+      {% endfor %}
+    
+    </div>
+
+    <div class="row row-b">
+      <a class="btn btn-outline-primary btn-lg" href="/visualisations">View all</a>
+    
+    </div>
+
+  <div class="row row-a">
+    <div class="col example-text-col">
       <h1 class="text-primary">I make video games</h1>
       <p>
         Video games are an expression of all kinds of different disciplines, bringing all of them toghether in fun experiences.
@@ -35,8 +50,24 @@ title: home
     </div>
   </div>
 
-  <div class="row">
-    <div class="col">
+  <div class="row row-a">
+    {% for games in site.games reversed limit: 3%}
+      <div class="col-sm example-col">
+        
+        <img class="img-fluid rounded game-image" src="../img/games/main/{{games.main_image}}" alt="{{games.title}}">
+        
+      </div>
+    {% endfor %}
+  
+  </div>
+
+  <div class="row row-a ">
+    <a class="btn btn-outline-primary btn-lg" href="/games">View all</a>
+  
+  </div>
+
+  <div class="row row-b ">
+    <div class="col example-text-col">
       <h1 class="text-primary">Contact me!</h1>
       <p>
         Need something made digitally? Contact me and let's see what's possible.
@@ -44,4 +75,4 @@ title: home
      
     </div>
   </div>
-</div>
+

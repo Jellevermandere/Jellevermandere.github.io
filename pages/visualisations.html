@@ -8,7 +8,7 @@ published: true
 {% for visualisations in site.visualisations reversed %}
 {% assign value = forloop.index | modulo:2 %}
 {% if value == 0 %}
-  <a class="row vis-row-a justify-content-center" href="{{ visualisations.permalink }}">
+  <a class="row row-a justify-content-center" href="{{ visualisations.permalink }}">
 
     <div class="col-sm-6 game-img-col">
 
@@ -33,7 +33,7 @@ published: true
   </a>
   
 {% else %}
-  <a class="row vis-row-b justify-content-center" href="{{ visualisations.permalink }}">
+  <a class="row row-b justify-content-center" href="{{ visualisations.permalink }}">
 
     <div class="col-sm-6 game-text-col order-2 order-sm-1" >
 
