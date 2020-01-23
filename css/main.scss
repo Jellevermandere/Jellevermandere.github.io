@@ -11,6 +11,7 @@
 
 /* body    ******************************************************** */
 
+
 body {
   
   font-family: Futura, sans-serif;
@@ -19,19 +20,19 @@ body {
 }
 h1{
   font-family: Futura, sans-serif;
-  font-size: 48px;
+  font-size: 30px;
   padding-top: 30px;
 }
 h2{
   font-family: Futura, sans-serif;
-  font-size: 36px;
-  
+  font-size: 24px;
+  padding-top: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 h3{
   font-family: Futura, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -41,12 +42,12 @@ h4{
 }
 p{
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .lead{
-  font-size: 14px;
+  font-size: 11px;
 }
 
 a{
@@ -105,7 +106,7 @@ a:hover{
   //background-size: cover;
   color: $primary !important;
   height: 100vh;
-  min-height: 600px;
+  min-height: 650px;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -126,7 +127,8 @@ a:hover{
   overflow: hidden;
 }
 .banner-center-col{
- padding-top: 20px;
+  margin-top: 30px;
+  
   max-width: 300px;
   
 }
@@ -152,7 +154,7 @@ margin-bottom: auto;
 }
 .scroll-row{
   text-align: center; 
-  padding-top: calc( 85vh - 600px );
+  padding-top: calc( 85vh - 650px );
   
   
 }
@@ -272,25 +274,15 @@ a {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-  h2{
-    font-size: 24px;
-  }
-  h3{
-    font-size: 18px;
-  }
-  p{
-    font-size: 12px;
-  }
-  .lead{
-    font-size: 11px;
-  }
   .about-title{
     text-align: right;
     }
- }
-
+  }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
+  h1{
+    font-size: 48px;
+  }
   h2{
     font-size: 36px;
   }
