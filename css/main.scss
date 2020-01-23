@@ -112,13 +112,13 @@ a:hover{
 }
 
 .banner-top-row{
-  height: 15%;
+  height: 10%;
   background-image: url(../img/site/BannerBoven.png);
   background-size: cover;
   background-position: center bottom;
 }
 .banner-bottom-row{
-  height: 85%;
+  height: 90%;
 }
 .banner-left-col{
   background-image: url(../img/site/BannerLinks.png);
@@ -276,8 +276,15 @@ a {
 @media (min-width: 576px) { 
   .about-title{
     text-align: right;
-    }
   }
+  .banner-top-row{
+    height: 15%;
+  }
+  .banner-bottom-row{
+    height: 85%;
+  }
+
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
   h1{
