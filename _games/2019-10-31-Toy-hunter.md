@@ -3,7 +3,7 @@ itch: 509286
 main_color: "#66C49E"
 second_color: "#411a00"
 permalink: /games/toyhunter
-main_image: "ToyHunter.png"
+main_image: "ToyHunter.jpg"
 character_image: Toy-hunter-character.png
 
 subtitle: In this game, you play as a toy who has been the boss of the room for a long time. However, new toys have begun to show up and want to take your place! It is your job to launch yourself as hard as possible to kick the new toys back from where they came!

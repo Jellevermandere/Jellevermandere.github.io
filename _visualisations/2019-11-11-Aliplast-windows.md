@@ -9,4 +9,4 @@ subtitle: This project involved the creation of several interior renderings of d
 
 ---
 
-this is a vis
+Made for the Company "Aliplast".

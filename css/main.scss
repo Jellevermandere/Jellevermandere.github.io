@@ -152,9 +152,12 @@ margin-top: auto;
 margin-bottom: auto;
 
 }
+.logo-img-row{
+  padding-top: calc( ( 85vh - 500px)  / 2 );
+}
 .scroll-row{
   text-align: center; 
-  padding-top: calc( 85vh - 500px );
+  padding-top: calc( ( 85vh - 500px ) / 2 );
   
 }
 /* nav    ******************************************************** */
@@ -304,8 +307,11 @@ a {
   .banner{
     min-height: 600px;  
   }
+  .logo-img-row{
+    padding-top: calc( (85vh - 600px) / 2 );
+  }
   .scroll-row{
-    padding-top: calc( 85vh - 600px );
+    padding-top: calc( (85vh - 600px) / 2 );
     
   }
  }

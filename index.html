@@ -17,7 +17,7 @@ title: home
 
       <div class="col banner-center-col">
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center logo-img-row">
           <div class="col-8 col-md text-center">
             <img class="img-fluid pb-sm-1 pb-md-3"  src="../img/site/JelleVermandereLogo.png" alt="Jelle Vermandere">
           </div>
@@ -102,12 +102,14 @@ title: home
     </div>
     
     <div class="row row-b ">
-      {% for visualisations in site.visualisations reversed limit: 3%}
-        <div class="col-sm example-col">
+      {% assign sorted = site.visualisations | sort: 'date' | reverse %}
+      {% for visualisations in sorted limit:3 %}
+      
+        <a class="col-sm example-col" href="{{ visualisations.permalink }}">
 
-          <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.main_image}}" alt="{{visualisations.title}}">
+          <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.main_image}}"  alt="{{visualisations.title}}">
           
-        </div>
+        </a>
       {% endfor %}
     
     </div>
@@ -128,12 +130,13 @@ title: home
   </div>
 
   <div class="row row-a">
-    {% for games in site.games reversed limit: 3%}
-      <div class="col-sm example-col">
+    {% assign sorted = site.games | sort: 'date' | reverse %}
+      {% for games in sorted limit:3 %}
+      <a class="col-sm example-col" href="{{ games.permalink }}">
         
         <img class="img-fluid rounded game-image" src="../img/games/main/{{games.main_image}}" alt="{{games.title}}">
         
-      </div>
+      </a>
     {% endfor %}
   
   </div>

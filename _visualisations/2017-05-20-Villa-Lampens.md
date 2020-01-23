@@ -9,4 +9,4 @@ subtitle: A school project where I made an interior rendering of an existing vil
 
 ---
 
-This is a UFU 3D section
+An interior Visualisation of the Villa from Lampens.
