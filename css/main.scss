@@ -51,11 +51,7 @@ a{
 a:hover{
   opacity: 0.9 !important;
 }
-.banner{
-  background-color : $background !important;
-  color: $primary !important;
-  height: 100vh;
-}
+
 
 .row-a{
   margin: 0px;
@@ -92,7 +88,67 @@ a:hover{
   max-width: 1200px;
   
 }
+.img-center{
+  margin:0 auto;
+}
 
+/* index    ******************************************************** */
+
+
+.banner{
+  background-color : $background !important;
+  //background-image: url(../img/site/bannerNoName.png);
+  //background-size: cover;
+  color: $primary !important;
+  height: 100vh;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.banner-top-row{
+  height: 20%;
+  background-image: url(../img/site/BannerBoven.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+.banner-bottom-row{
+  height: 80%;
+}
+.banner-left-col{
+  background-image: url(../img/site/BannerLinks.png);
+  background-size: cover;
+  background-position: right top;
+}
+.banner-center-col{
+ padding-top: 30px;
+  max-width: 350px;
+  
+}
+.banner-right-col{
+  background-image: url(../img/site/BannerRechts.png);
+  background-size: cover;
+  background-position: left top;
+}
+
+.function-img-col{
+  max-width: 75px;
+  padding-bottom: 20px;
+  border-right: solid;
+  border-width: 1px;
+  border-color: $primary;
+}
+.function-text-col{
+
+margin-top: auto;
+margin-bottom: auto;
+
+}
+.scroll-row{
+  text-align: center; 
+  padding-bottom: 150px;
+  vertical-align: bottom;
+  height: 50%;
+}
 /* nav    ******************************************************** */
 
 .navbar{
