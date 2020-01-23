@@ -21,7 +21,9 @@ body {
 h1{
   font-family: Futura, sans-serif;
   font-size: 30px;
-  padding-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 h2{
   font-family: Futura, sans-serif;
@@ -60,21 +62,23 @@ a:hover{
 
 .row-a{
   margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  //padding-top: 15px;
+  //padding-bottom: 15px;
   background-color: $rowbga !important; 
   color: $rowtexta !important;
   justify-content: center;
+ 
 }
 
 .row-b{
   margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  //padding-top: 15px;
+  //padding-bottom: 15px;
   background-color: $rowbgb !important; 
   color: $rowtextb !important;
   justify-content: center;
-  text-align: right;
+  
+  
 }
 .col-a{
   max-width: 600px !important;
@@ -91,8 +95,15 @@ a:hover{
 }
 .example-text-col{
   max-width: 1200px;
+  text-align:  center;
   
 }
+.title-text-col{
+  
+  max-width: 1200px;
+  
+}
+
 .img-center{
   margin:0 auto;
 }
@@ -217,7 +228,24 @@ text-align: left;
 }
 
 /* visualisations *********************************************** */
+.vis-row-a{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $rowbga !important; 
+  color: $rowtexta !important;
+  justify-content: center;
+ 
+}
 
+.vis-row-b{
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $rowbgb !important; 
+  color: $rowtextb !important;
+  justify-content: center;
+}  
 
 .vis-col{
   padding-left: 0px;
