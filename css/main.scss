@@ -15,7 +15,7 @@
 body {
   
   font-family: Futura, sans-serif;
-   
+  // min-width: 284px;
 
 }
 h1{
@@ -106,7 +106,7 @@ a:hover{
   //background-size: cover;
   color: $primary !important;
   height: 100vh;
-  min-height: 650px;
+  min-height: 400px;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -154,8 +154,7 @@ margin-bottom: auto;
 }
 .scroll-row{
   text-align: center; 
-  padding-top: calc( 85vh - 650px );
-  
+  padding-top: calc( 85vh - 500px );
   
 }
 /* nav    ******************************************************** */
@@ -302,7 +301,13 @@ a {
   .lead{
     font-size: 14px;
   }
-
+  .banner{
+    min-height: 600px;  
+  }
+  .scroll-row{
+    padding-top: calc( 85vh - 600px );
+    
+  }
  }
 
 // Large devices (desktops, 992px and up)
