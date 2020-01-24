@@ -2,11 +2,27 @@
 title: Jellever
 email: jelle@jellever.be
 author: Jelle Vermandere
-description:
-url:
+description: Jelle Vermandere is a freelance creator of visualisations, renderings, games and other interactive experiences
+url: https://www.jellever.be
+logo: /img/site/JelleVermandereLogo.png
 # Social icons
 show_social_icons: true
 username: jellevermandere
+
+twitter:
+  username: jellevermandere
+  card: summary
+
+  social:
+  name: JelleVermandere
+  links:
+    - https://twitter.com/jellevermandere
+    - https://www.facebook.com/jellevermandere
+    - https://www.linkedin.com/in/jellevermandere
+    - https://github.com/jellevermandere
+    - https://www.youtube.com/jellevermandere
+    - https://www.instagram.com/jellevermandere
+    - https://www.jellever.itch.io
 
 
 # Build settings
@@ -23,16 +39,22 @@ defaults:
     scope:
       type: "games"
     values:
+      author: Jelle Vermandere
       layout: "game"
+      permalink: /games/:title/
       
   -
     scope:
       type: "visualisations"
     values:
+      author: Jelle Vermandere
       layout: "visualisation"
-      permalink: /visualisations/:title
+      permalink: /visualisations/:title/
 
+#plugins
 
+plugins:
+  - jekyll-seo-tag
 
 
 # sass

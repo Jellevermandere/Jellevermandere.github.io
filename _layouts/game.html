@@ -1,11 +1,17 @@
 ---
 layout: default
 ---
+
 <div class="row row-main-game justify-content-center" style="background-color:{{page.main_color}}; color: {{page.second_color}}">
-    <div class="col col-main-game">
+    <div class="col-12 col-main-vis">
+        <img class="img-fluid  rounded vis-img" src="../../img/games/main/{{page.image}}" alt="{{page.title}}">
+    </div>
+    <div class="col-md-6 col col-main-vis pb-3">
+        
         <h1>{{ page.title }}</h1>
         <iframe class="rounded game-embed mb-5" src="https://itch.io/embed/{{ page.itch }}"  frameborder="0"><a href="https://jellever.itch.io/{{ page.title }}">{{ page.title }} by Jelle Vermandere</a></iframe>
         
         {{content}}
     </div>
 </div>
+

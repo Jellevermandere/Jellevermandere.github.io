@@ -3,11 +3,11 @@ itch: 378486
 
 main_color: "#ea5156"
 second_color: "#ffbf58"
-permalink: /games/thelostgiraffe
-main_image: "TheLostGiraffe.jpg"
+permalink: /games/thelostgiraffe/
+image: "TheLostGiraffe.jpg"
 character_image: Toy-hunter-character.png
 
-subtitle: This little giraffe has lost it's classmates. Find your way through the treacherous jungle by swinging with your long neck. Help your classmates along the way and before you know it, you'll be back on the bus.
+description: This little giraffe has lost it's classmates. Find your way through the treacherous jungle by swinging with your long neck. Help your classmates along the way and before you know it, you'll be back on the bus.
 
 
 ---

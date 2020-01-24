@@ -3,11 +3,11 @@ itch: 398882
 
 main_color: "#EF9156" 
 second_color: "#302B37"
-permalink: /games/parallelspace
-main_image: "ParallelSpace.jpg"
+permalink: /games/parallelspace/
+image: "ParallelSpace.jpg"
 character_image: Toy-hunter-character.png
 
-subtitle: You are lost in space, but it is not regular space. You seem to have ended up in a weird realty were it is possible to traverse optical illusions. Good luck finding your way out!
+description: You are lost in space, but it is not regular space. You seem to have ended up in a weird realty were it is possible to traverse optical illusions. Good luck finding your way out!
 
 
 ---

@@ -42,6 +42,11 @@ h4{
   font-family: Futura, sans-serif;
   font-size: 18px;
 }
+h5{
+  font-family: Futura, sans-serif;
+  font-size: 18px;
+  padding-top: 30px;
+}
 p{
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -335,6 +340,11 @@ a {
 }
 }
 
+/* posts    ******************************************************** */
+
+
+
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -366,6 +376,9 @@ a {
     font-size: 36px;
   }
   h3{
+    font-size: 22px;
+  }
+  h5{
     font-size: 22px;
   }
   p{

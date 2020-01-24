@@ -45,7 +45,7 @@ title: home
       
         <a class="col-sm example-col" href="{{ visualisations.permalink }}">
 
-          <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.main_image}}"  alt="{{visualisations.title}}">
+          <img class="img-fluid rounded game-image" src="../img/visualisations/main/{{visualisations.image}}"  alt="{{visualisations.title}}">
           
         </a>
       {% endfor %}
@@ -78,7 +78,7 @@ title: home
       {% for games in sorted limit:3 %}
       <a class="col-sm example-col" href="{{ games.permalink }}">
         
-        <img class="img-fluid rounded game-image" src="../img/games/main/{{games.main_image}}" alt="{{games.title}}">
+        <img class="img-fluid rounded game-image" src="../img/games/main/{{games.image}}" alt="{{games.title}}">
         
       </a>
     {% endfor %}

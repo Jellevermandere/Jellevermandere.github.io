@@ -2,11 +2,11 @@
 itch: 431023
 main_color: "#57BACC" 
 second_color: "#073B4C"
-permalink: /games/pigeontohorizon
-main_image: "PigeonToHorizon.jpg"
+permalink: /games/pigeontohorizon/
+image: "PigeonToHorizon.jpg"
 character_image: Toy-hunter-character.png
 
-subtitle: It is time for the great migration. Because you are a pigeon and have never done such a thing, it is very difficult. Try to dodge all obsacles along the way.
+description: It is time for the great migration. Because you are a pigeon and have never done such a thing, it is very difficult. Try to dodge all obsacles along the way.
 
 
 ---
