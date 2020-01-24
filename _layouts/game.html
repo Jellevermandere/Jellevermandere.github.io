@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<div class="container" style="background-color:{{page.main_color}}">
-
-
-<h1>{{ page.title }}</h1>
-
-<iframe style="border rounded" src="https://itch.io/embed/{{ page.itch }}" height="167" width="552" frameborder="0"><a href="https://jellever.itch.io/{{ page.title }}">{{ page.title }} by Jelle Vermandere</a></iframe>
-
-{{content}}
-
+<div class="row row-main-game justify-content-center" style="background-color:{{page.main_color}}; color: {{page.second_color}}">
+    <div class="col col-main-game">
+        <h1>{{ page.title }}</h1>
+        <iframe class="rounded game-embed mb-5" src="https://itch.io/embed/{{ page.itch }}"  frameborder="0"><a href="https://jellever.itch.io/{{ page.title }}">{{ page.title }} by Jelle Vermandere</a></iframe>
+        
+        {{content}}
+    </div>
 </div>

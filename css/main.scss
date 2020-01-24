@@ -93,7 +93,7 @@ a:hover{
 }
 .col-c{
   padding-top: 20px;
-  max-width: 300px;
+  
   padding-bottom: 30px;
 }
 .example-col{
@@ -213,13 +213,10 @@ margin-bottom: auto;
 .about-title{
 text-align: left;
 }
-.col-img{
-  background-image: url(../img/site/JellePhoto.png);
-  background-size: cover;
-  background-position: left center ;
-  background-repeat: no-repeat;
-  margin-top: -15px;
-  margin-bottom: -15px;
+.profile-image{
+  
+  margin-bottom: 30px;
+  
   
 }
 
@@ -242,6 +239,24 @@ text-align: left;
 }
 .rounded {
   border-radius: 10px !important; //for example
+}
+.game-embed{
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+}
+.col-main-game{
+  max-width: 600px;
+  text-align: center;
+}
+.game-main-img{
+  max-width: 600px;
+}
+.row-main-game{
+  margin: 0px;
+  min-height: 100vh;
 }
 
 /* visualisations *********************************************** */
@@ -274,7 +289,11 @@ text-align: left;
     display: block;
     
 }
-
+.col-main-vis{
+  max-width: 1200px;
+  text-align: center;
+  padding-top: 15px;
+}
 .vis-img-row{
   
   margin: auto;
